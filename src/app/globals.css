@@ -67,9 +67,11 @@
 }
 
 .animate-loser {
+    opacity: 0.5;
     transform: rotate(180deg);
-    animation: customBounce .6s infinite;
 }
+
+
 
 p, span, img, strong, br {
     pointer-events: none;
