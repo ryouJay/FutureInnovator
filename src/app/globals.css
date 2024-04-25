@@ -1,0 +1,81 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/utilities';
+
+.max-w-960px {
+    max-width: 960px;
+    width: 100vw;
+}
+
+.max-w-720px {
+    max-width: 640px;
+    width: 100vw;
+}
+
+.min-h-360px {
+    min-height: 360px;
+}
+
+.middle-content {
+    height: 290px;
+    width: calc(100vw - 18px);
+}
+
+.middle-photo {
+    width: 210px;
+    height: 210px;
+    border-radius: 210px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.floating-circle {
+    width: 96px;
+    height: 96px;
+    border-radius: 128px;
+}
+
+.bg-basic {
+    background-color: #161616;
+}
+
+.bg-basic-gray {
+    background-color: #2d2d2d;
+}
+
+.custom-transition {
+    transition: .3s ease-in-out;
+}
+
+.bg-client-gray {
+    background-color: #ececec;
+}
+
+.animate-winner {
+    animation: customBounce .6s infinite;
+}
+@keyframes customBounce {
+    0%, 100% {
+        transform: translateY(-10%);
+        opacity: 1;
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        opacity: 0.75;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+
+.animate-loser {
+    transform: rotate(180deg);
+    animation: customBounce .6s infinite;
+}
+
+p, span, img, strong, br {
+    pointer-events: none;
+    user-select: none;
+}
+
+body {
+    overflow-y: scroll;
+}
