@@ -1,19 +1,19 @@
 
 export const createAnswer = ()=>{
-    const newArray = Array.from({ length: 9 }, (v,k) => k+1);
-    const targetLength = 3;
-    const answerArray = [];
-    for (let i=0; i< targetLength; i++){
-        const targetIndex = (Math.floor(Math.random()*newArray.length));
+    const newArray = Array.from({ length: 9 }, (v,k) => k+1)
+    const targetLength = 3
+    const answerArray = []
+    for (let i=0; i<targetLength; i++){
+        const targetIndex = (Math.floor(Math.random()*newArray.length))
         answerArray.push(newArray[targetIndex] .toString())
         newArray.splice(targetIndex,1)
     }
-    return answerArray;
+    return answerArray
 }
 
 interface stats {
-    strike: number;
-    ball: number;
+    strike: number
+    ball: number
 }
 
 export const judgeNumber = (target:Array<string>, answer:Array<string>, sentence:Array<string>
@@ -23,7 +23,7 @@ export const judgeNumber = (target:Array<string>, answer:Array<string>, sentence
 
     if (!Array.isArray(target)) return alert("Incorrect answer submission")
 
-    for (let i = 0; i < answer.length; i++){
+    for (let i=0; i<answer.length; i++){
         if(answer.includes(target[i])){
             if(target[i] === answer[i]) {
                 result.strike += 1

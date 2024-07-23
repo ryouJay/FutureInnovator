@@ -1,12 +1,12 @@
 'use client'
-import Image from "next/image";
-import React, {useEffect, useRef, useState} from "react";
-import {NumberBoxes} from "./NumberBoxes";
-import {createAnswer, judgeNumber} from "./BullsFunc";
+import Image from "next/image"
+import React, {useEffect, useRef, useState} from "react"
+import {NumberBoxes} from "./NumberBoxes"
+import {createAnswer, judgeNumber} from "./BullsFunc"
 
 export const BullsComponent = () => {
 
-    const imageDiv = useRef<HTMLDivElement>(null);
+    const imageDiv = useRef<HTMLDivElement | null>(null)
 
     const [chance, setChance] = useState<number>(10)
     const [sentence, setSentence] = useState<Array<string>>([])
