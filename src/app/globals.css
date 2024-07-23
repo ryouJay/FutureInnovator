@@ -1,6 +1,17 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/utilities';
 
+
+p, span, img, strong, br {
+    pointer-events: none;
+    user-select: none;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+/**/
 .max-w-960px {
     max-width: 960px;
     width: 100vw;
@@ -50,6 +61,7 @@
     background-color: #ececec;
 }
 
+/*bulls*/
 .animate-winner {
     animation: customBounce .6s infinite;
 }
@@ -69,15 +81,4 @@
 .animate-loser {
     opacity: 0.5;
     transform: rotate(180deg);
-}
-
-
-
-p, span, img, strong, br {
-    pointer-events: none;
-    user-select: none;
-}
-
-body {
-    overflow-y: scroll;
 }

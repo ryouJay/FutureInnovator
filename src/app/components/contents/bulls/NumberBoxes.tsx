@@ -1,10 +1,10 @@
 'use client'
-import React, {useState} from "react";
-import {NumberBox} from "./NumberBox";
+import React, {useState} from "react"
+import {NumberBox} from "./NumberBox"
 
 export const NumberBoxes = (props:{guessNumber:(event: React.MouseEvent<HTMLButtonElement>) => void}) => {
-    const guessNumber = props.guessNumber;
-    const [numbers,setNumbers] = useState<string>("1,2,3");
+    const guessNumber = props.guessNumber
+    const [numbers,setNumbers] = useState<string>("1,2,3")
 
     return (
         <div className={"grid grid-cols-2 mt-4"}>

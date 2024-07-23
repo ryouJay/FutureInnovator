@@ -1,8 +1,8 @@
 "use client"
-import {FloatingModal} from "../FloatingModal";
-import {useState} from "react";
-import {urlCheck} from "../Utils";
-import {InfoBox} from "./InfoBox";
+import {FloatingModal} from "../FloatingModal"
+import {useState} from "react"
+import {urlCheck} from "../Utils"
+import {InfoBox} from "./InfoBox"
 
 export const Footer = () => {
 
