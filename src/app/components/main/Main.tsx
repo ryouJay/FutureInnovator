@@ -3,7 +3,7 @@ import {useEffect, useRef, useState} from "react"
 import {useGlobalState} from "../../context/GlobalStateContext"
 import {Home} from "../contents/home/Home"
 import {Bulls} from "../contents/bulls/Bulls"
-import {Rhythm} from "../contents/Rhythm/Rhythm";
+import {Rhythm} from "../contents/rhythm/Rhythm";
 
 export const Main = () => {
     const {page} = useGlobalState()
