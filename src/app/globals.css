@@ -82,3 +82,20 @@ body {
     opacity: 0.5;
     transform: rotate(180deg);
 }
+
+/*rhythm*/
+.animate-clickEffect {
+    animation: clickEffect 1.5s forwards;
+}
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
