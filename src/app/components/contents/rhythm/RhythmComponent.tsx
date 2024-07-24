@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
 import { levelSeq } from './Songs';
-import {getColor, keyMapping, Note, ratio, tile} from "./RhythmFunc";
+import {getColor, keyMapping, Note, ratio, tile, tileKey} from "./RhythmFunc";
 
 const RhythmComponent = (props: { level: number }) => {
     const [score, setScore] = useState<number>(0);
@@ -155,9 +155,9 @@ const RhythmComponent = (props: { level: number }) => {
                 {tile.map((left, index) => (
                     <div
                         key={index}
-                        className="absolute bottom-0 w-12 h-12 border-2 border-dashed border-black box-border opacity-20"
+                        className="absolute bottom-0 w-12 h-12 border-2 border-dashed border-black box-border opacity-20 text-center font-semibold text-xl"
                         style={{ left: `${left}%`, backgroundColor: getColor(left) }}
-                    />
+                    >{tileKey[index].toUpperCase()}</div>
                 ))}
             </div>
             <div className="mt-5 text-2xl bg-cornflowerblue">Score: {score}</div>

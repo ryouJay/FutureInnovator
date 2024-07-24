@@ -1,4 +1,5 @@
 export const tile = [2, 22, 42, 62, 82];
+export const tileKey = ['d', 'f', 'g', 'j', 'k'];
 
 export const keyMapping:{[key: string]:number} = {'d': 2,'f': 22,'g': 42,'j': 62,'k': 82};
 
